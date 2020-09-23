@@ -1,0 +1,194 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', 'Helvetica', sans-serif;
+    --primary-color: orange;
+    --secondary-color: #333;
+    --primary-light-color: #F6F4E5;
+    --maybe-use-this-later-color: #DA8C48;
+    --border-menu-item-color: #f4f4f4;
+    --alert-color: #B55750;
+    --standard-font-family: 'Raleway', 'Helvetica', Geneva, Verdana, sans-serif;
+    --standard-font-size: 1.1rem;
+    --mobile-font-size: 0.7rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* --- NAV BAR STYLES --- */
+.nav-bar {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    padding: 5px 5%;
+    box-sizing: border-box;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.7));
+}
+
+.nav-container {
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#nav-menu {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    position: absolute;
+    top: 55%;
+    width: 80%;
+    text-align: right;
+    padding-left: 100px;
+}
+
+.nav-menu-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+}
+
+.nav-menu-list-item a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var(--border-menu-item-color);
+    border: solid 1px var(--border-menu-item-color);
+    border-radius: 4px;
+}
+
+    .nav-menu-list-item a:hover {
+        background-color: var(--border-menu-item-color);
+        color: #000;
+    }
+
+#logo_id {
+    max-width: 100px;
+    height: 100px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: cursive;
+    text-align: center;
+    letter-spacing: 8px;
+    color: var(--primary-color);
+}
+
+h2 {
+    font-size: 22px;
+    font-family: cursive;
+    margin-bottom: 48px;
+    letter-spacing: 5px;
+    color: var(--primary-color);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.header_title_container {
+    /*display: flex;
+	float: left;*/
+    align-items: center;
+    width: 100%;
+}
+
+/* MAIN */
+#wrappr {
+    padding-top: 110px;
+}
+
+#main-container {
+    display: flex;
+    justify-content: space-between;
+    margin: -150px auto 0 auto;
+    width: 100%;
+    max-width: 1280px;
+    perspective: 5000px;
+}
+
+.main-section {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.7)), url(../img/NASA.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 50%;
+    height: 100vh;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 200px;
+}
+
+.main-title {
+    font-size: 22px;
+    margin-bottom: 48px;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main-text {
+    width: 60%;
+    text-align: left;
+    line-height: 25px;
+}
+
+.main-text-left {
+    width: 25%;
+    text-align: left;
+    line-height: 25px;
+}
+
+.main-paragraph {
+    font-weight: 400;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+a {
+    color: var(--primary-light-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 6px 18px 5px 18px;
+}
+
+    a:hover, a.on {
+        color: var(--primary-color);
+    }
+
+#trailer_div {
+    width: 500px;
+    padding-bottom: 20px;
+}
+
+#frameYT {
+    width: 500px;
+    height: 315px;
+}
+/* Footer */
+.footer-container {
+    display: flex;
+    border-top: 2px solid var(--primary-color);
+    padding: 10px;
+    height: 50px
+}
+
+.footer-box {
+    flex: 1
+}
